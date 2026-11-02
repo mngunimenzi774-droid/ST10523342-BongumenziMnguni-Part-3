@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enquiry - Porsche 911, Cayenne, Taycan</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<h1>Enquire About Porsche</h1>
+<form id="enquiryForm">
+  <label>Name *</label><input type="text" name="name" required><span id="err-name" style="color:red"></span><br>
+  <label>Email *</label><input type="email" name="email" required><span id="err-email" style="color:red"></span><br>
+  <label>Phone *</label><input type="tel" name="phone" placeholder="0821234567" required><span id="err-phone" style="color:red"></span><br>
+  <label>Model *</label>
+  <select name="service" required><option value="">Select</option><option value="911">911 GT3 RS - R4.5m</option><option value="Cayenne">Cayenne - R2.8m</option><option value="Taycan">Taycan - R3.2m</option></select><span id="err-service" style="color:red"></span><br>
+  <label>Message *</label><textarea name="message" required></textarea><span id="err-message" style="color:red"></span><br>
+  <button type="submit">Submit Enquiry</button>
+</form>
+<div id="enquiryResponse"></div>
+<script src="main.js"></script>
+<script src="forms.js"></script>
+</body>
+</html>
